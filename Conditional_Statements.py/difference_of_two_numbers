@@ -1,0 +1,32 @@
+Question:
+Write a program that reads three numbers A, B, and C and checks if the difference between any two numbers (A − B, B − C, and C − A) is always less than 25.  
+Print "Difference is less than 25" if the difference between any two numbers is less than 25.  
+Otherwise, print "Difference is not less than 25."
+
+Input:
+The first line of input contains an integer representing A  
+The second line of input contains an integer representing B  
+The third line of input contains an integer representing C
+
+Output:
+The output should be a single line containing a string.
+
+Example:
+Input
+65
+60
+52
+
+Output
+Difference is less than 25
+
+
+code is
+a=int(input())
+b=int(input())
+c=int(input())
+if (a>b and (a-b)<25) and (b>c and (b-c)<25) or (c>a and (c-a)<25):
+    print("Difference is less than 25")
+else:
+    print("Difference is not less than 25")
+        
